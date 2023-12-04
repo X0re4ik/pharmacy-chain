@@ -1,0 +1,957 @@
+[
+{
+    "model": "pharmacy.location",
+    "pk": 3,
+    "fields": {
+        "longitude": 45.0,
+        "latitude": 45.0,
+        "address": "г. Екатеринбург, ул. Амундсена 65"
+    }
+},
+{
+    "model": "pharmacy.location",
+    "pk": 4,
+    "fields": {
+        "longitude": 56.0,
+        "latitude": 56.0,
+        "address": "г. Екатеринбург, ул. Амундсена 68"
+    }
+},
+{
+    "model": "pharmacy.location",
+    "pk": 5,
+    "fields": {
+        "longitude": 67.0,
+        "latitude": 78.0,
+        "address": "г. Екатеринбург, ул. Амундсена 123"
+    }
+},
+{
+    "model": "pharmacy.pharmacy",
+    "pk": 4,
+    "fields": {
+        "phone": "+79923458629",
+        "email": "xoore8ik@gmail.com",
+        "location": 4,
+        "beginning_of_work": "08:00:00",
+        "end_of_work": "20:00:00"
+    }
+},
+{
+    "model": "pharmacy.pharmacy",
+    "pk": 5,
+    "fields": {
+        "phone": "+79923458621",
+        "email": "xoore1ik@gmail.com",
+        "location": 5,
+        "beginning_of_work": "08:00:00",
+        "end_of_work": "17:00:00"
+    }
+},
+{
+    "model": "pharmacy.pharmacy",
+    "pk": 6,
+    "fields": {
+        "phone": "+79223458620",
+        "email": "VolkNeVolk@gmail.com",
+        "location": null,
+        "beginning_of_work": "09:00:00",
+        "end_of_work": "18:00:00"
+    }
+},
+{
+    "model": "product.medicine",
+    "pk": "5a76b203-47ee-4308-9844-6e1c50da3020",
+    "fields": {
+        "manufacturer": "Биосинтез ПАО",
+        "name": "Панкреатин 25 ЕД 20 шт. блистер таблетки кишечнорастворимые , покрытые пленочной оболочкой",
+        "need_recipe": false,
+        "number_of_tablets": 60,
+        "dosage": 120
+    }
+},
+{
+    "model": "product.medicine",
+    "pk": "6240937d-8072-47f3-ad30-ee62e5e689bb",
+    "fields": {
+        "manufacturer": "ФАРМАКОР ПРОДАКШН ООО",
+        "name": "Эссентинорм эссенциальные фосфолипиды 60 шт. капсулы массой 0,47 г",
+        "need_recipe": false,
+        "number_of_tablets": 60,
+        "dosage": 123
+    }
+},
+{
+    "model": "product.medicine",
+    "pk": "c73cd705-3cfa-4d39-bc12-b21332e6ca00",
+    "fields": {
+        "manufacturer": "Фармстандарт-Лексредства ОАО",
+        "name": "Парацетамол 500 мг 20 шт. таблетки",
+        "need_recipe": true,
+        "number_of_tablets": 20,
+        "dosage": 16
+    }
+},
+{
+    "model": "price.pharmacymedicinaldrugprice",
+    "pk": 5,
+    "fields": {
+        "pharmacy": 4,
+        "price": 900.0,
+        "medicinal_drug": "6240937d-8072-47f3-ad30-ee62e5e689bb"
+    }
+},
+{
+    "model": "price.pharmacymedicinaldrugprice",
+    "pk": 6,
+    "fields": {
+        "pharmacy": 4,
+        "price": 879.0,
+        "medicinal_drug": "5a76b203-47ee-4308-9844-6e1c50da3020"
+    }
+},
+{
+    "model": "price.pharmacymedicinaldrugprice",
+    "pk": 7,
+    "fields": {
+        "pharmacy": 4,
+        "price": 1289.0,
+        "medicinal_drug": "c73cd705-3cfa-4d39-bc12-b21332e6ca00"
+    }
+},
+{
+    "model": "price.pharmacymedicinaldrugprice",
+    "pk": 8,
+    "fields": {
+        "pharmacy": 5,
+        "price": 1234.0,
+        "medicinal_drug": "c73cd705-3cfa-4d39-bc12-b21332e6ca00"
+    }
+},
+{
+    "model": "price.pharmacymedicinaldrugprice",
+    "pk": 9,
+    "fields": {
+        "pharmacy": 5,
+        "price": 765.0,
+        "medicinal_drug": "5a76b203-47ee-4308-9844-6e1c50da3020"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2023-12-04T16:01:36.453Z",
+        "user": 1,
+        "content_type": 2,
+        "object_id": "2",
+        "object_repr": "Аптека по адресу: (45.0, 45.0)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2023-12-04T16:01:36.456Z",
+        "user": 1,
+        "content_type": 2,
+        "object_id": "1",
+        "object_repr": "Аптека по адресу: (45.0, 45.0)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2023-12-04T16:01:41.295Z",
+        "user": 1,
+        "content_type": 1,
+        "object_id": "2",
+        "object_repr": "(45.0, 45.0)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2023-12-04T16:01:41.299Z",
+        "user": 1,
+        "content_type": 1,
+        "object_id": "1",
+        "object_repr": "(45.0, 45.0)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2023-12-04T16:01:48.273Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "eb04b3cf-71d6-4b6a-a0a9-0937f49bfc44",
+        "object_repr": "Синий мишка",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2023-12-04T16:02:41.245Z",
+        "user": 1,
+        "content_type": 1,
+        "object_id": "3",
+        "object_repr": "(45.0, 45.0)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2023-12-04T16:03:13.987Z",
+        "user": 1,
+        "content_type": 2,
+        "object_id": "3",
+        "object_repr": "Аптека по адресу: (45.0, 45.0)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2023-12-04T16:03:18.191Z",
+        "user": 1,
+        "content_type": 2,
+        "object_id": "3",
+        "object_repr": "Аптека по адресу: (45.0, 45.0)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Phone\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2023-12-04T16:03:46.412Z",
+        "user": 1,
+        "content_type": 1,
+        "object_id": "4",
+        "object_repr": "(56.0, 56.0)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2023-12-04T16:03:51.847Z",
+        "user": 1,
+        "content_type": 2,
+        "object_id": "4",
+        "object_repr": "Аптека по адресу: (56.0, 56.0)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2023-12-04T16:04:25.325Z",
+        "user": 1,
+        "content_type": 1,
+        "object_id": "5",
+        "object_repr": "(78.0, 67.0)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2023-12-04T16:04:33.305Z",
+        "user": 1,
+        "content_type": 2,
+        "object_id": "5",
+        "object_repr": "Аптека по адресу: (78.0, 67.0)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2023-12-04T16:06:31.785Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "6240937d-8072-47f3-ad30-ee62e5e689bb",
+        "object_repr": "Эссентинорм эссенциальные фосфолипиды 60 шт. капсулы массой 0,47 г",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2023-12-04T16:06:42.366Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "6240937d-8072-47f3-ad30-ee62e5e689bb",
+        "object_repr": "Эссентинорм эссенциальные фосфолипиды 60 шт. капсулы массой 0,47 г",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u043e\\u0437\\u0438\\u0440\\u043e\\u0432\\u043a\\u0430\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2023-12-04T16:07:22.582Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "5a76b203-47ee-4308-9844-6e1c50da3020",
+        "object_repr": "Панкреатин 25 ЕД 20 шт. блистер таблетки кишечнорастворимые , покрытые пленочной оболочкой",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2023-12-04T16:08:05.725Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "c73cd705-3cfa-4d39-bc12-b21332e6ca00",
+        "object_repr": "Парацетамол 500 мг 20 шт. таблетки",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2023-12-04T16:08:18.251Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "2",
+        "object_repr": "Аптека по адресу: (45.0, 45.0) - Эссентинорм эссенциальные фосфолипиды 60 шт. капсулы массой 0,47 г: 1000.0",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2023-12-04T16:08:33.532Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "3",
+        "object_repr": "Аптека по адресу: (45.0, 45.0) - Панкреатин 25 ЕД 20 шт. блистер таблетки кишечнорастворимые , покрытые пленочной оболочкой: 1200.0",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2023-12-04T16:08:43.272Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "4",
+        "object_repr": "Аптека по адресу: (45.0, 45.0) - Парацетамол 500 мг 20 шт. таблетки: 1300.0",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2023-12-04T16:08:49.916Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "5",
+        "object_repr": "Аптека по адресу: (56.0, 56.0) - Эссентинорм эссенциальные фосфолипиды 60 шт. капсулы массой 0,47 г: 900.0",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2023-12-04T16:08:57.101Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "6",
+        "object_repr": "Аптека по адресу: (56.0, 56.0) - Панкреатин 25 ЕД 20 шт. блистер таблетки кишечнорастворимые , покрытые пленочной оболочкой: 879.0",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2023-12-04T16:09:04.766Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "7",
+        "object_repr": "Аптека по адресу: (56.0, 56.0) - Парацетамол 500 мг 20 шт. таблетки: 1289.0",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2023-12-04T16:09:12.784Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "8",
+        "object_repr": "Аптека по адресу: (78.0, 67.0) - Парацетамол 500 мг 20 шт. таблетки: 1234.0",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2023-12-04T16:09:19.075Z",
+        "user": 1,
+        "content_type": 4,
+        "object_id": "9",
+        "object_repr": "Аптека по адресу: (78.0, 67.0) - Панкреатин 25 ЕД 20 шт. блистер таблетки кишечнорастворимые , покрытые пленочной оболочкой: 765.0",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2023-12-04T16:18:58.953Z",
+        "user": 1,
+        "content_type": 2,
+        "object_id": "3",
+        "object_repr": "Аптека по адресу: (45.0, 45.0)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2023-12-04T16:19:10.082Z",
+        "user": 1,
+        "content_type": 1,
+        "object_id": "6",
+        "object_repr": "(45.78, 45.78)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2023-12-04T16:19:43.221Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "b93d3f69-cf74-47e0-86da-c39609d4bafb",
+        "object_repr": "Синий мишка",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add Расположение",
+        "content_type": 1,
+        "codename": "add_location"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change Расположение",
+        "content_type": 1,
+        "codename": "change_location"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete Расположение",
+        "content_type": 1,
+        "codename": "delete_location"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view Расположение",
+        "content_type": 1,
+        "codename": "view_location"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add Аптека",
+        "content_type": 2,
+        "codename": "add_pharmacy"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change Аптека",
+        "content_type": 2,
+        "codename": "change_pharmacy"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete Аптека",
+        "content_type": 2,
+        "codename": "delete_pharmacy"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view Аптека",
+        "content_type": 2,
+        "codename": "view_pharmacy"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add Лекартсвенный препарат",
+        "content_type": 3,
+        "codename": "add_medicine"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change Лекартсвенный препарат",
+        "content_type": 3,
+        "codename": "change_medicine"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete Лекартсвенный препарат",
+        "content_type": 3,
+        "codename": "delete_medicine"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view Лекартсвенный препарат",
+        "content_type": 3,
+        "codename": "view_medicine"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add Цена на лакарство в аптеке",
+        "content_type": 4,
+        "codename": "add_pharmacymedicinaldrugprice"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change Цена на лакарство в аптеке",
+        "content_type": 4,
+        "codename": "change_pharmacymedicinaldrugprice"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete Цена на лакарство в аптеке",
+        "content_type": 4,
+        "codename": "delete_pharmacymedicinaldrugprice"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view Цена на лакарство в аптеке",
+        "content_type": 4,
+        "codename": "view_pharmacymedicinaldrugprice"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 5,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 5,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 5,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 5,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 6,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 6,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 6,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 6,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 7,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 7,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 7,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 7,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 8,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 8,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 8,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 8,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 9,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 9,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 9,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 9,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 10,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 10,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 10,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 10,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$JzgIFkXrH5VM4kIotHBJul$3zpY4cI+e0Ib5cyPtrV8ksPQ/I56Griav4lNFeabIfY=",
+        "last_login": "2023-12-04T16:01:07.634Z",
+        "is_superuser": true,
+        "username": "Xore4ik55",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-12-04T16:00:46.707Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "pharmacy",
+        "model": "location"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "pharmacy",
+        "model": "pharmacy"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "product",
+        "model": "medicine"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "price",
+        "model": "pharmacymedicinaldrugprice"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "eb8lz0qqhrw4zns4ek6pepuzaiax3hxi",
+    "fields": {
+        "session_data": ".eJxVjDEOwjAMRe-SGUWym6Q1IztniJzYoQXUSE07VdwdVeoA63_v_d1E3tYxbk2XOIm5GjCX3y1xful8AHny_Kg213ldpmQPxZ602XsVfd9O9-9g5DYedQDnO-hShs6n4h0QMZMUGQhLL1mCZiTRBChDjwHUkUdAVSwsZD5f5kw4PQ:1rABNb:0hpBqBv2HCb_xgebU9dxROPp0phZPoYqwUMaSqnkwYM",
+        "expire_date": "2023-12-18T16:01:07.642Z"
+    }
+}
+]
